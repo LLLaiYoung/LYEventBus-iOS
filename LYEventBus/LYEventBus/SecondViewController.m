@@ -39,12 +39,18 @@
 }
 
 - (void)sendMessge {
-    [[LYEventBus shareInstance] test];
+//    [[LYEventBus shareInstance] test];
+    [[LYEventBus shareInstance] testWithArgument:@"argument"];
 }
 
 - (void)eventTest {
     NSLog(@"this is EventBus test");
 }
+
+- (void)eventTestWithArgument:(NSString *)argument {
+    NSLog(@"argument = %@",argument);
+}
+
 - (void)applicationDidFinishLaunchingNotification {
     NSLog(@"%s,line = %i,%@",__func__,__LINE__,[NSThread currentThread]);
 }

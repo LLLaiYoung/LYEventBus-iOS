@@ -14,4 +14,8 @@
     [[self valueForKey:@"eventBusDelegate"] eventTest];
 }
 
+- (void)testWithArgument:(NSString *)argument {
+    [[self valueForKey:@"eventBusDelegate"] eventTestWithArgument:argument];
+}
+
 @end
