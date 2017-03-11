@@ -8,7 +8,7 @@
 
 #import "LYEventBus.h"
 
-@protocol LYEventBusProtocolTest <NSObject>
+@protocol LYEventBusProtocolTest <LYEventBusProtocol>
 /** 实现该协议，接受方法 */
 - (void)eventTest;
 - (void)eventTestWithArgument:(NSString *)argument;
